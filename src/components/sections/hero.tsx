@@ -50,6 +50,7 @@ export function Hero() {
                     fill
                     className="object-cover"
                     priority={index === 0}
+                    unoptimized
                   />
                 )}
               </div>
@@ -215,11 +216,10 @@ export function Hero() {
           <button
             key={i}
             onClick={() => emblaApi?.scrollTo(i)}
-            className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-              i === currentSlide
-                ? "w-2 h-6 bg-primary"
-                : "w-2 bg-white/30 hover:bg-white/50"
-            }`}
+            className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${i === currentSlide
+              ? "w-2 h-6 bg-primary"
+              : "w-2 bg-white/30 hover:bg-white/50"
+              }`}
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}

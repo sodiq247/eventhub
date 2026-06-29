@@ -10,6 +10,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
+      scriptProps={{
+        type: typeof window === "undefined" ? "text/javascript" : "text/plain",
+      }}
     >
       {children}
     </NextThemesProvider>
