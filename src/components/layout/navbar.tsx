@@ -64,7 +64,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground group"
+                  className="relative px-4 py-2 text-sm font-medium text-white transition-colors hover:text-foreground group"
                 >
                   {link.label}
                   <span className="absolute bottom-0 left-1/2 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:left-4 group-hover:w-[calc(100%-2rem)]" />
@@ -77,13 +77,13 @@ export function Navbar() {
               <ThemeToggle />
               <Link
                 href="/login"
-                className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                className="text-sm font-medium text-white hover:text-foreground transition-colors"
               >
                 Login
               </Link>
               <Link
                 href="/register"
-                className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                className="text-sm font-medium text-white hover:text-foreground transition-colors"
               >
                 Register
               </Link>
